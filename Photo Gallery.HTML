@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head><title>Photo Gallery</title>
+<meta name="viewpoint"content="width=device-width,initial-scale=1.0"/>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+
+<header>
+<h1 class="animate__animated animate__fadeIn">Photo Gallery</h1>
+</header>
+</head>
+<nav>
+
+<style>
+h1
+{
+text-align:center;
+//background:red;
+font-size:80px;
+cursor:pointer;
+font-family: "Edu VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.pic
+{
+transition:0.5s;
+width:80%;
+margin:20px;
+border-radius:22px;
+text-align:center;
+box-shadow:7px 7px 10px black;
+}
+
+.pic:hover
+{
+transform:scale(1);
+border-radius:8px;
+width:100%;
+}
+
+#container
+{
+display:flex;
+flex-direction:column;
+justify-content: center;
+text-align:center;
+}
+
+#col1,#col2,#col3,#col4,#col5,#col6
+{
+width:100%;
+//box-sizing:border-box;
+}
+
+/*    Extra small devices (phones, 600px and down)   */
+
+@media only screen and (max-width: 600px)
+{
+//body{background:green;}
+
+.pic:hover
+{
+transform:scale(1);
+border-radius:8px;
+width:90%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+{
+//body{background:blue;}
+
+#container
+{
+flex-direction:row;
+flex-wrap: wrap;
+//justify-content: space-between;
+//justify-content: space-around;
+justify-content: space-evenly;
+}
+
+#col1,#col2,#col3,#col4,#col5,#col6
+{
+width:40%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) 
+{
+//body{background:red;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+{
+//body{background:purple;}
+
+#col1,#col2,#col3,#col4,#col5,#col6
+{
+width:30%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px)
+{
+//body{background:yellow;}
+} 
+
+</style>
+<body>
+<div id="container">
+
+<div  id="col1"class="animate__animated animate__rotateInDownLeft">
+
+<a href="a1.html">
+<img src="Images/a1.jpg" class="pic"
+</a>
+</div>
+
+<div  id="col2"class="animate__animated animate__zoomIn">
+
+<a href="a2.html">
+<img src="Images/a2.webp" class="pic"
+</a>
+</div>
+
+<div  id="col3"class="animate__animated animate__rotateInDownRight">
+
+<a href="a3.html">
+<img src="Images/a3.jpg" class="pic"
+</a>
+</div>
+
+<div  id="col4"class="animate__animated animate__slideInLeft">
+
+<a href="a4.html">
+<img src="Images/a4.jpg" class="pic"
+</a>
+</div>
+
+<div  id="col5"class="animate__animated animate__fadeInUp">
+
+<a href="a5.html">
+<img src="Images/a5.jpg" class="pic"
+</a>
+</div>
+
+<div  id="col6"class="animate__animated animate__slideInRight">
+
+<a href="a6.html">
+<img src="Images/a6.jpg" class="pic"
+</a>
+</div>
+
+</div>
+
+</body>
+
+</html>
