@@ -1,0 +1,15 @@
+
+main
+{
+    margin:10px;
+    height:500px;
+}
+#login
+{
+    text-align: center;
+}
+body{background: yellow;
+}
+header{
+    border:1px black solid;
+}
