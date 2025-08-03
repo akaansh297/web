@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head><title></title>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<header>
+    <h1>Registration Form</h1>
+</header>
+</head>
+<style>
+
+h1
+{text-align: left;
+background:BLACK;
+color:white;
+width:100%;
+padding-left:10px;}
+
+#login
+{
+    text-align:center;
+    border: 4px solid BLACK;
+    width: 550px;
+    padding: 20px;
+    //padding-left: 100px;
+    box-shadow:7px 7px 7px BLACK;
+margin:auto;
+border-radius:100px 100px 0px 100px;
+
+
+}
+body
+{
+text-align: center;
+padding-top: 50px;
+padding-left: 50px;
+//background:linear-gradient(135deg,#ff9900,rgb(235, 209, 61),rgb(226, 186, 53));;
+}
+.input
+{
+    height:20px;
+width:600px;
+border-radius: 30px;
+border: none;
+padding: 10px;
+padding-left:25px;
+font-family: 'poppins',sans-serif;
+}
+.b1
+{
+    height:50px;
+width:150px;
+border-radius: 30px;
+border: none;
+padding: 10px;
+text-align: center;
+font-family: 'poppins',sans-serif;
+}
+.b2
+{
+    height:50px;
+width:150px;
+border-radius: 30px;
+border: none;
+padding: 10px;
+text-align: center;
+font-family: 'poppins',sans-serif;
+}
+.b1:hover
+{
+background:GRAY;
+}
+h2
+{
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+}
+
+.b3
+{
+
+font-family: 'poppins',sans-serif;
+
+}
+
+</style>
+<body>
+            <div id="login">
+                <table cellpadding="4" cellspacing="10">
+                    <h2>Fill The Form Carefully</u></h2>
+                    <form method="action">
+<hr size="1px" color="Black">                      
+ <tr>
+<td> <label> User Id </label></td> <td> <input required title="type Name here..."placeholder="Type name here" class="b2" ></td>
+</tr>
+
+<tr>
+<td> <label> DOB </label> </td> <td> <input type="date"> </br> </td>
+</tr>
+
+<tr>
+<td> <label> Gender </label> </td>
+<td> 
+ Male  <input type="radio" value="Male" name="gender">
+Female <input type="radio" value="Female" name="gender">
+Other <input type="radio" value="Other" name="gender">
+</td>
+</tr>
+
+
+<tr>
+<td> <label> City </label> </td>
+<td>
+<select>
+<option value="Delhi">Delhi </option>
+<option value="Mumbai"> Mumbai </option>
+<option value="Chennai"> Chennai </option>
+<option value="Hyderabad">Hyderabad </option>
+<option value="Pune"> Pune </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label> Message </label> </td>
+<td>
+<textarea rows="4" cols="50"> </textarea>
+</tr>
+
+<tr>
+<td> </td>
+<td> 
+
+<input type="Submit" value="Register"class="b1"> 
+<input type="reset"class="b1">
+
+</td>
+</td>
+</tr>
+
+                    </form>
+                </table>
+            </div>
+</body>
+</html>
