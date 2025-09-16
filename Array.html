@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<style>
+    .pic
+    {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+</style>
+<body>
+    <img src="Images/a1.jpg" id="main" class="pic">
+    <script>
+var p=document.getElementById("main")
+var piclist = new Array("a1.jpg","a2.webp","a3.jpg","a4.jpg","a5.jpg","a6.jpg")
+
+var n=0
+function show()
+{
+document.title=n
+if(n<piclist.length)
+{n++}
+else
+{n=0}
+p.src="Images/"+piclist[n]
+}
+setInterval("show()",1000)
+    </script>
+</body>
+</html>
