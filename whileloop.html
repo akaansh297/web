@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic
+    {
+        width: 20%;
+    }
+</style>
+<body>
+    <script>
+        var a = 1
+             while a<=6
+             {
+                document.write("<img onmouseout='goback(this)' onclick='show(this)' class='pic' src='images/a"+a+".jpg'>")
+                a++
+             }
+             function show(pic)
+             {
+                pic.style.trasform="scale(1.50)"
+             }
+             function goback(pic)
+             {
+                pic.style.trasform="scale(1)"
+             }
+
+    </script>
+</body>
+</html>
