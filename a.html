@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<style>
+    header
+.pic {
+    width: 70%;
+    height: 400px;
+}
+</style>
+<body onload="runbanner()">
+    <header>
+    <img id="pic" src="Images/a1.jpg" class="pic animate__animated">
+</header>
+<script>
+    var pic = document.getElementById("pic")
+    var c = 0
+
+    function runbanner() 
+    {
+        if (c<6) {
+            c++
+        } else {
+            c = 1
+        }
+
+        switch (c) {
+            case 1:
+                p.src="Images/a1.jpg"
+                p.classList.add("animate__bounce");
+                break;
+            case 2:
+                p.src="Images/a2.webp"
+                p.classList.add("animate__flash");
+                break;
+            case 3:
+                p.src="Images/a3.jpg"
+                p.classList.add("animate__pulse");
+                break;
+            case 4:
+                p.src="Images/a4.jpg"
+                p.classList.add("animate__rubberBand");
+                break;
+            case 5:
+                p.src="Images/a5.jpg"
+                p.classList.add("animate__shakeX");
+                break;
+            case 6:
+                p.src="Images/a6.jpg"
+                p.classList.remove("animate__backInDown", "animate__heartBeat", "animate__swing", "animate__rubberBand", "animate__bounce");
+                break;
+        }
+
+        document.title = c
+        setTimeout("runbanner()",1000)
+    }
+</script>
+</body>
+</html>
