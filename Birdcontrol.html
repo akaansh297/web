@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bird control</title>
+  <style>
+    body {
+      overflow: hidden;
+    }
+    .pic {
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      width: 100px;
+      transition: 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="bird" class="pic" src="Images/bird.gif">
+
+  <script>
+    var bird = document.getElementById("bird");
+    var t = 200; // top position
+    var l = 200; // left position
+
+    function moveBird(e) {
+      var key = e.key;
+
+      switch (key) {
+        case "ArrowUp":
+          t -= 20;
+          bird.style.top = t + "px";
+          document.title = "Up Arrow";
+          break;
+
+        case "ArrowDown":
+          t += 20;
+          bird.style.top = t + "px";
+          document.title = "Down Arrow";
+          break;
+
+        case "ArrowLeft":
+          l -= 20;
+          bird.style.left = l + "px";
+          bird.style.transform = "rotateY(180deg)";
+          document.title = "Left Arrow";
+          break;
+
+        case "ArrowRight":
+          l += 20;
+          bird.style.left = l + "px";
+          bird.style.transform = "rotateY(0deg)";
+          document.title = "Right Arrow";
+          break;
+
+        default:
+          document.title = "No Arrow Key";
+      }
+    }
+
+    document.addEventListener("keydown", moveBird);
+  </script>
+
+</body>
+</html>
